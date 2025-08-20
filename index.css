@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: none;  
-  scroll-behavior: smooth; 
+ 
 }
 
 html, body {
@@ -115,7 +115,14 @@ img{
     font-size: larger;
     padding: 10px 10px;
     color: #fffffa;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 
+}
+
+.log:hover{
+    
+    background-color: #055e46;
 }
 
 .text{
@@ -212,9 +219,9 @@ hr{
   color: #fff;
   width: 100%;
   height:1000px;
-  scroll-snap-align: start;   
+
   min-height: 100vh;  
-   
+    scroll-margin-top: 80px;
 }
 
 h2{
