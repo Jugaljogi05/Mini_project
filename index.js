@@ -27,3 +27,13 @@ const texts = [
     }
     type();
     
+  document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const faqItem = button.parentElement;
+    faqItem.classList.toggle("active");
+
+    // Change + to –
+    const toggle = button.querySelector(".toggle");
+    toggle.textContent = faqItem.classList.contains("active") ? "–" : "+";
+  });
+});
